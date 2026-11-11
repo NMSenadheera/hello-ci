@@ -6,3 +6,5 @@ jobs:
   steps: 
    - name: print greeting
      run: echo "Hello, CI!"
+   - name: print current time
+     run: date

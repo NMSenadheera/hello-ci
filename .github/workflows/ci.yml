@@ -12,6 +12,8 @@ jobs:
      run: TZ="Asia/Colombo" date
    - name: Github Username
      run: echo "Pushed by ${{ github.actor }}"
+     run: exit 1
+
  say-goodbye:
   runs-on: ubuntu-latest
   needs: say-hello

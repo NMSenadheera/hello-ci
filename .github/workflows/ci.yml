@@ -8,3 +8,7 @@ jobs:
      run: echo "Hello, CI!"
    - name: print current time
      run: date
+   - name: print Sri Lankan time zone
+     run: TZ="Asia/Colombo" date
+   - name: Github Username
+     run: echo "Pushed by ${{ github.actor }}"
